@@ -1,0 +1,378 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+  <meta http-equiv="content-type"
+ content="text/html; charset=ISO-8859-1">
+  <title>ID3v2 Chapter Tool</title>
+</head>
+<body style="color: rgb(0, 0, 0); background-color: rgb(102, 204, 204);"
+ alink="#000099" link="#000099" vlink="#990099">
+<table
+ style="text-align: left; color: rgb(255, 255, 255); height: 164px; width: 100%;"
+ border="2" cellpadding="10" cellspacing="2">
+  <tbody>
+    <tr>
+      <td
+ style="width: 152px; vertical-align: middle; background-color: rgb(255, 255, 255);">
+      <a href="http://sourceforge.net/projects/id3v2-chap-tool"><img
+ style="border: 0px solid ; width: 152px; height: 150px;" alt=""
+ title="" src="images/chaptool.png"></a><br>
+      </td>
+      <td
+ style="background-color: rgb(0, 72, 143); vertical-align: middle;">
+      <h1 style="text-align: center; font-style: italic;"><big><big><font
+ size="+3"><big>ID3v2ChapterTool</big></font></big></big></h1>
+      </td>
+    </tr>
+  </tbody>
+</table>
+
+<table style="text-align: left;" border="2" cellpadding="10"
+ cellspacing="2">
+  <tbody>
+    <tr>
+      <td
+ style="text-align: center; background-color: rgb(102, 204, 204); vertical-align: top; width: 136px;"><a
+ href="http://www.id3.org/"><img
+ style="border: 0px solid ; height: 149px; width: 152px;" alt="ID3.org"
+ title="" src="images/id3v2.png"></a><br>
+      <br>
+      <br>
+      <br>
+      <a
+ href="http://sourceforge.net/project/showfiles.php?group_id=148759"><img
+ src="images/download.png" title="" alt="Download"
+ style="border: 0px solid ; width: 152px; height: 150px;"></a><br>
+      <br>
+      <br>
+      <br>
+      <a href="http://www.java.com/en/download/download_the_latest.jsp"><img
+ src="images/java_getitnow_blue.gif" title="" alt="Download Java"
+ style="border: 0px solid ; width: 88px; height: 31px;"></a><br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <a href="http://www.sourceforge.net/"><img src="http://sourceforge.net/sflogo.php?group_id=148759&amp;type=4"
+         style="border: 0px solid ; width: 125px; height: 37px;"
+         alt="SourceForge.net Logo" title=""></a> <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      </td>
+      <td
+       style="background-color: rgb(255, 255, 255); vertical-align: middle;">
+      <div style="text-align: center;"> </div>
+      <h2 style="font-family: arial;"><img src="images/tool24.png"
+          title="" alt="" style="width: 24px; height: 24px;">&nbsp; Introduction</h2>
+      <p class="MsoNormal" style="font-family: times new roman,times,serif;">
+       ID3v2ChapterTool is an application which allows you to author and embed chapter
+       information in your MP3 files. It is part of the <a
+       href="http://www.bbc.co.uk/opensource/">BBC open source</a> initiative and is maintained as a 
+       <a href="http://sourceforge.net/projects/id3v2-chap-tool">Sourceforge project</a>. The application uses a new signalling specification that
+has been developed by <a href="http://www.id3.org/">ID3.org</a></p>
+
+<p><b>Warning:</b> ID3v2 Chapter signalling is not currently supported by most media players. Although the signalling is unlikely to cause problems
+it may be some time before you will be able to see a benefit. However, if you are developing a media player which supports chapters you should 
+find this application useful.</p>
+
+      <p class="MsoNormal"
+ style="font-family: times new roman,times,serif;">Chapters in this
+context could be any of the following:</p>
+      <ul style="font-family: arial;">
+        <li><span
+ style="font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-stretch: normal; font-size-adjust: none;"></span>
+          <span style="font-family: times new roman,times,serif;">chapters
+within an audiobook</span></li>
+        <li style="font-family: times new roman,times,serif;"> <span
+ style="font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-stretch: normal; font-size-adjust: none;">
+          </span>articles within a podcast</li>
+        <li style="font-family: times new roman,times,serif;"> <span
+ style="font-style: normal; font-variant: normal; font-weight: normal; font-size: 7pt; line-height: normal; font-stretch: normal; font-size-adjust: none;">
+          </span>individual tracks within a multi-track audio file</li>
+      </ul>
+      <p class="MsoNormal"
+ style="font-family: times new roman,times,serif;">At
+the most basic level this chapter information consists of the start
+time of each chapter you define, allowing listeners to skip easily to
+these points in the file during replay. However, chapters can also have
+descriptive information (e.g. title), images and URLs.</p>
+      <p class="MsoNormal"
+ style="font-family: times new roman,times,serif;">The
+information attached to each chapter can be used by media players to
+provide a dynamic display during replay. For example, the images
+attached to each chapter can be used to provide a slide show.</p>
+      <o:p></o:p>
+      <p></p>
+      <p class="MsoNormal"
+ style="font-family: times new roman,times,serif;"><span
+ style="font-family: times new roman,times,serif;">The
+ID3v2ChapterTool also allows you to create a Table of Contents (TOC).
+At the simplest level a TOC can be a flat list of chapters as shown in
+this </span> <a href="#screenshot"
+ style="font-family: times new roman,times,serif;">screenshot</a><span
+ style="font-family: times new roman,times,serif;">.</span> However, it
+is also possible to create a hierarchical table of contents if required.<br>
+      </p>
+      <p class="MsoNormal"
+ style="font-family: times new roman,times,serif;">At
+the most advanced level it is possible to define multiple TOCs for a
+single audio file. For example, one TOC could provide access to the
+entire audio file whilst a second TOC could provide access to a set of
+highlights.</p>
+      <span style="font-family: times new roman,times,serif;">Once
+chapter information is widely supported by media players it will
+enable some exciting new multimedia applications such Audio
+Encyclopaedias.
+
+<p>The application is based on a <a href="javadoc/index.html">Chapter Signalling API</a> which is an extension of the 
+<a href="http://sourceforge.net/projects/vdheide-id3">Java ID3 API</a> developed by Jens Vonderheide.</p>
+      </span>
+      <hr style="width: 100%; height: 2px;">
+      <h2><img src="images/tool24.png" title="" alt=""
+ style="width: 24px; height: 24px;">&nbsp; <span
+ style="font-family: arial;">Requirements and Installation<br>
+      </span></h2>
+      <p class="MsoNormal"
+ style="font-family: times new roman,times,serif;">ID3v2ChapterTool
+requires <a
+ href="http://www.java.com/en/download/download_the_latest.jsp">Java</a>
+1.4 and <a href="http://java.sun.com/products/java-media/jmf/index.jsp">JMF</a>
+2.1.1e but should also work with later versions. Both of these are
+available from Sun Microsystems.<br>
+      </p>
+      <p class="MsoNormal"
+ style="font-family: times new roman,times,serif;">You can download the
+latest release of the ID3v2ChapterTool <a
+ href="http://sourceforge.net/project/showfiles.php?group_id=148759">here</a>.
+      </p>
+      <span style="font-family: times new roman,times,serif;">After
+unzipping the archive Windows users can launch the application by
+running</span><font style="font-family: monospace;">
+ID3v2ChapterTool.bat</font> <span style="font-family: monospace;"> </span><span
+ style="font-family: times new roman,times,serif;">whilst Linux users
+should run</span><font style="font-family: monospace;">ID3v2ChapterTool.sh</font><br
+ style="font-family: times new roman,times,serif;">
+      <span style="font-family: times new roman,times,serif;"><br>
+If you have any problems you can check your JMF installation by running
+this</span><span style="font-family: times new roman,times,serif;"> <a
+ href="http://java.sun.com/products/java-media/jmf/2.1.1/jmfdiagnostics.html">Diagnostic
+Applet</a></span><span style="font-family: times new roman,times,serif;">.<br>
+      </span><br>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<a name="screenshot"></a>
+<table style="text-align: left; width: 100%;" border="2"
+ cellpadding="10" cellspacing="2">
+  <tbody>
+    <tr>
+      <td
+ style="vertical-align: top; text-align: center; background-color: rgb(102, 204, 204);">
+      <div style="text-align: center;"> </div>
+      <p class="MsoNormal"> </p>
+      <table
+ style="text-align: left; margin-left: auto; margin-right: auto; height: 60px; width: 600px;"
+ border="1" cellspacing="2" cellpadding="2">
+        <tbody>
+          <tr>
+            <td
+ style="background-color: rgb(255, 255, 255); text-align: center; vertical-align: middle;">
+            <h2><img src="images/tool24.png" title="" alt=""
+ style="width: 24px; height: 24px;">&nbsp; <span
+ style="font-family: helvetica,arial,sans-serif;">Screenshot</span></h2>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      <p class="MsoNormal"><br>
+      <img src="images/screenshot.png" title="" alt="Screenshot"
+ style="font-family: arial;"></p>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<table style="text-align: left;" border="2" cellpadding="10"
+ cellspacing="2">
+  <tbody>
+    <tr>
+      <td
+ style="text-align: center; background-color: rgb(102, 204, 204); vertical-align: top; width: 136px;"><a
+ href="http://www.id3.org/"><img
+ style="border: 0px solid ; height: 149px; width: 152px;" alt="ID3.org"
+ title="" src="images/id3v2.png"></a><br>
+      <br>
+      <br>
+      <br>
+      <a
+ href="http://sourceforge.net/project/showfiles.php?group_id=148759"><img
+ src="images/download.png" title="" alt="Download"
+ style="border: 0px solid ; width: 152px; height: 150px;"></a><br>
+      <br>
+      <br>
+      <br>
+      <a href="http://www.java.com/en/download/download_the_latest.jsp"><img
+ src="images/java_getitnow_blue.gif" title="" alt="Download Java"
+ style="border: 0px solid ; width: 88px; height: 31px;"></a><br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <a href="http://www.sourceforge.net/"><img
+ src="http://sourceforge.net/sflogo.php?group_id=148759&amp;type=4"
+ style="border: 0px solid ; width: 125px; height: 37px;"
+ alt="SourceForge.net Logo" title=""></a> <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      </td>
+      <td
+ style="vertical-align: top; background-color: rgb(255, 255, 255);">
+      <div style="text-align: center;"> </div>
+      <h2><img src="images/tool24.png" title="" alt=""
+ style="width: 24px; height: 24px;">&nbsp;<span
+ style="font-family: helvetica,arial,sans-serif;"> Features</span><br>
+      </h2>
+      <p class="MsoNormal"> The main window of the application consists
+of four panels:<br>
+      </p>
+      <ul>
+        <li>a Table of Contents tree</li>
+        <li>a Media Player</li>
+        <li>a Toolbar<br>
+        </li>
+        <li>a tabbed panel providing access to the Chapter and TOC
+frames created by the application<br>
+        </li>
+      </ul>
+      <p class="MsoNormal">In
+the example shown above, a news podcast has been given a single-level
+Table of
+Contents which lists five articles. The information provided for the
+final article is displayed which consists of a title, a description, an
+image and a URL.<br>
+      </p>
+      <hr style="width: 100%; height: 2px;">
+      <h2><img src="images/tool24.png" title="" alt=""
+ style="width: 24px; height: 24px;">&nbsp; <span
+ style="font-family: arial;">Getting started<br>
+      </span></h2>
+      <span style="font-family: times new roman,times,serif;">To create
+a set of chapters with a basic Table of Contents use the following
+steps:</span><br style="font-family: times new roman,times,serif;">
+      <ol style="font-family: times new roman,times,serif;">
+        <li>Run ID3v2ChapterTool and select the required audio file
+using the "Open" command on the File menu.</li>
+        <li>If desired, enter a title for the Table of Contents into
+the TOC title field (e.g. "Today's programme").</li>
+        <li>Click on the "Add Chapter" button. The start time of the
+chapter will be preset to the beginning of the file.</li>
+        <li>Play the audio file using the media player.<br>
+        </li>
+        <li>Set
+the end time of the chapter by pressing the "Set End"&nbsp; button at
+the required point. If preferred, you can pause the media player
+beforehand. <br>
+        </li>
+        <li>Check the start and end times using the jump to "Start" and
+"End" buttons. You can repeat step 6 until happy with the settings. If 
+necessary, you can use the nudge buttons followed by the set buttons 
+to make small changes whilst the media player is paused.<br>
+        </li>
+        <li>Add a chapter title and description if required.</li>
+        <li>Add any chapter-related images, URLs and other text frames
+using the "Add ... subframe" buttons.</li>
+        <li>Repeat
+steps 4 - 9 for the remaining chapters. The start time of each new
+chapter will be preset to the end time of the previous one.</li>
+        <li>When the chapters are defined save the file using the
+"Save" or "Save As" commands on the File menu.</li>
+      </ol>
+      <span style="font-family: arial;"><span
+ style="font-family: times new roman,times,serif;">Once
+a file has been saved it can be re-opened at any time to check or edit the
+chapter information. 
+<p>Files are always saved using an ID3v2 version 3 tag but the application 
+will accept input files using either version 2 or 3. Information in the 
+original ID3v2 frames is preserved.</span>
+      </span>
+      <hr style="width: 100%; height: 2px; font-family: arial;">
+      <h2 style="font-family: arial;"><img src="images/tool24.png"
+ title="" alt="" style="width: 24px; height: 24px;">&nbsp; Advanced
+features</h2>
+      <span style="font-family: times new roman,times,serif;">To create
+a multi-level Table of Contents add the intermediate levels as follows:<br>
+      </span>
+      <ul style="font-family: times new roman,times,serif;">
+        <li>Select the desired parent by clicking on its location in
+the "Table of Contents" panel.</li>
+        <li>Click the "Add TOC" button.</li>
+      </ul>
+      <span style="font-family: times new roman,times,serif;">To add
+chapters to a multi-level Table of Contents:<br>
+      </span>
+      <ul style="font-family: times new roman,times,serif;">
+        <li>Select the desired parent by clicking on its location in
+the "Table of Contents" panel.</li>
+        <li>Clicking on the "Add Chapter" button.</li>
+      </ul>
+      <span style="font-family: times new roman,times,serif;">It is
+possible have more than one Table of Contents entry for an individual
+chapter. To add additional entries:</span><br
+ style="font-family: times new roman,times,serif;">
+      <ul style="font-family: times new roman,times,serif;">
+        <li>Select the appropriate chapter tab in the "ID3v2 Chapter
+Frames" panel.</li>
+        <li>Select the desired parent by clicking on its location in
+the "Table of Contents" panel.</li>
+        <li>Click the "Add Entry" button.</li>
+      </ul>
+      <p class="MsoNormal"> </p>
+      <hr style="width: 100%; height: 2px;">
+      <p class="MsoNormal"> </p>
+      <h2><img src="images/tool24.png" title="" alt=""
+ style="width: 24px; height: 24px;">&nbsp; <span
+ style="font-family: arial;">XML import/export</span><br>
+      </h2>
+      <p class="MsoNormal">Chapter information can be imported and 
+exported from ID3v2ChapterTool using the XML file format supported 
+by Apple. These functions are provided on the File menu. 
+Alternatively, chapter information from an XML file can be added 
+to an MP3 file in a simple, one-line operation using XMLTool.bat. 
+Type "XMLTool" for details of the required parameters.
+<br></p>
+      <hr style="width: 100%; height: 2px;">
+      <p class="MsoNormal"> </p>
+      <h2><img src="images/tool24.png" title="" alt=""
+ style="width: 24px; height: 24px;">&nbsp; <span
+ style="font-family: arial;">Chapter player</span><br>
+      </h2>
+      <p class="MsoNormal">A basic chapter player application is now included to 
+allow the playback of audio files with chapter frames to be demonstrated. The application
+can be launched using ChapterPlayer.bat. Type "ChapterPlayer &lt;audio file name&gt;" to 
+run the player.
+<br></p>
+      <hr style="width: 100%; height: 2px;">
+      <p class="MsoNormal"> </p>
+      <h2><img src="images/tool24.png" title="" alt=""
+ style="width: 24px; height: 24px;">&nbsp; <span
+ style="font-family: arial;">Feedback</span><br>
+      </h2>
+      <p class="MsoNormal">Feedback would be appreciated via the <a
+ href="http://sourceforge.net/tracker/?group_id=148759">project tracker</a>
+if you find any bugs or would like to submit a feature request.</p>
+<p class="MsoNormal">Patches or code providing useful extensions would also be
+welcome.<br></p>
+      <hr style="width: 100%; height: 2px;">
+&copy; 2006 British
+Broadcasting Corporation. All rights reserved.<br>
+      <br>
+      </td>
+    </tr>
+  </tbody>
+</table>
+</body>
+</html>
